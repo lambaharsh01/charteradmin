@@ -1,3 +1,6 @@
+body {
+  font-family: Tahoma, sans-serif !important;
+}
 .loginImgLogo{
   height: 140px;
   width: auto;
@@ -9,6 +12,10 @@
 
 .charterBorderBottom{
   border-color: #3156A4 !important;
+}
+
+.charterText{
+color:#3156A4 !important;
 }
 
 

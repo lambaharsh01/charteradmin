@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 
 export default function Login(){
     
 const charterIcon='/charterIcon.png';
     
-const [pageHeight, setPageHeight]=useState(window.innerHeight);
 
 const [userName, setUserName]=useState('');
 const [userPassWord, setUserPassword]=useState('');
@@ -13,16 +12,10 @@ const [userPassWord, setUserPassword]=useState('');
 
 
 
-useEffect(()=>{
-    setPageHeight(window.innerHeight);
-
-}, []);
-
-
 
 
     return(
-        <div style={{height:pageHeight}} className="container-fluid d-flex justify-content-center charterBlue w-full charterBlue">
+        <div className="container-fluid d-flex justify-content-center charterBlue w-full charterBlue h-screen">
             <div className="row w-100 py-4 px-sm-0 px-2">
 
                 <div className="col-sm-8 col-md-6 offset-sm-2 offset-md-3 p-2 text-center bg-white rounded-lg relative">
