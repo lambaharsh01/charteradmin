@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import './App.css'
 import Login from './Auth/Login';
+import Dashboard from "./AdminPanel/Dashboard";
 
 
 
@@ -16,7 +18,10 @@ function App(){
 
 <Routes>
 
-        <Route path="/" element={<Login />} />
+        {/* <Route path="/" element={<Login />} />
+        <Route path="/Dashboard" element={<Dashboard />} /> */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Dashboard />} />
 
 </Routes>
 
